@@ -27,7 +27,7 @@ public class CalculadoraTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void testSomar() {
+    public void testSomarNulo() {
         Integer a = null;
         Integer b = null;
         
