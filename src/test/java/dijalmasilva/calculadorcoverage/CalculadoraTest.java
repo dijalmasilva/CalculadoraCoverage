@@ -27,11 +27,18 @@ public class CalculadoraTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void testSomarNulo() {
+    public void testSomarNuloA() {
         Integer a = null;
         Integer b = null;
         
         assertEquals(0, calculadora.somar(a, b));
     }
     
+    @Test(expected = IllegalArgumentException.class)
+    public void testSomarNuloB() {
+        Integer a = 2;
+        Integer b = null;
+        
+        assertEquals(0, calculadora.somar(a, b));
+    }
 }
