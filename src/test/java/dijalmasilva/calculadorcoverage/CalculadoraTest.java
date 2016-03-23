@@ -41,4 +41,12 @@ public class CalculadoraTest {
         
         assertEquals(0, calculadora.somar(a, b));
     }
+    
+    @Test
+    public void testSomar(){
+        Integer a = 5;
+        Integer b = 3;
+        
+        assertEquals(8, calculadora.somar(a, b));
+    }
 }
